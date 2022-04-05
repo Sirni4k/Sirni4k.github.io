@@ -2,6 +2,83 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e0e0e0;
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 10;
+  background-color: #337ab7;
+  border-radius: 10%;
+  width: 40px;
+  height: 40px;
+  animation: preloader-bounce 7s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: 50px;
+  bottom: 0;
+  animation-delay: -0s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 5s opacity;
+  opacity: 1;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 nav {
     width: 100%;
     height: 60px;
@@ -172,17 +249,12 @@ main {
         opacity: 1;
         margin-left: 404px;
     }
-
-
-    
-    
-    
-    
+}
     
 about_me {
     width: 100%;
     height: 730px;
-} 
+}
 
 .about_me {
     width: 1920px;
@@ -190,9 +262,6 @@ about_me {
     background: url("../img/%D0%A4%D0%BE%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BE%D0%B1%D0%BE%20%D0%BC%D0%BD%D0%B5.jpg") cover no-repeat;
 }
  
-    
-    
-    
 .title__container_1 {
     float: left;
     margin: 109px 0px 0px 597px;
@@ -233,11 +302,33 @@ about_me {
     background: none;
     color: #263244;
     border-radius: 9px;
+    transition: all 0.5s;
+    transform: scale(1);
+
 }
 
 .title__container_1 > a {
     background: url("../img/%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C.png") 16px/auto 45% no-repeat;
+
 }
+
+
+.title__container_1 a:hover {
+    background-color: aliceblue;
+    transform: scale(1.1);
+}
+
+.title__container_1 a:visited {
+    color: brown;
+}
+
+
+
+
+
+
+
+
 
 .Skills {
     width: 1920px;
@@ -267,6 +358,12 @@ about_me {
 .Design img {
     float: left;
     margin-left: 105px;
+    display: flex;
+    transition: all 1s ease;
+}
+
+.Design img:hover {
+    transform: rotate(180deg);
 }
 
 .Design h4 {
@@ -294,6 +391,15 @@ about_me {
     margin-left: -260px;
 }
 
+.Development img {
+    display: flex;
+    transition: all 1s ease;
+}
+
+.Development img:hover {
+    transform: rotate(360deg);
+}
+    
 .Development h4 {
     font-size: 18px;
     font-weight: 600;
@@ -314,6 +420,19 @@ about_me {
     float: left;
     margin-top: 267px;
     margin-left: 37px;
+}
+
+
+.CEO img{
+    display: flex
+    margin-top: 267px;
+    margin-left: 0px;
+    transition: all 1s ease;
+}
+
+.CEO img:hover {
+    transform: translate(50px, -20px);
+
 }
 
 .CEO h4 {
@@ -337,6 +456,19 @@ about_me {
     margin-top: 267px;
     margin-left: 167px;
 }
+
+.Marketing img{
+    display: flex;
+    transition: all 1s;
+    transform: matrix(1,0,0,1,0,0);
+
+}
+
+.Marketing img:hover{
+    transform: matrix(1.1, 0, 0.2, 1.1, 0, 0);
+}
+
+
 
 .Marketing h4 {
     font-size: 18px;
@@ -479,8 +611,17 @@ about_me {
     color: #737373;
     text-align: left;
     padding-left: 10px;
+    transform: scale(1);
   
-    
+}
+
+select:focus{
+    border: 1px solid cadetblue;
+    box-shadow: 0px 0px 5px rgba(100,100,220,200);
+}
+
+select:hover{
+    transform: scale(1.01)
 }
 
 .Diz {
@@ -507,9 +648,12 @@ about_me {
 }
 
 .Statistics {
-    background: url("../img/%D1%84%D0%BE%D0%BD%20%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0.jpg") no-repeat;
+    background: url("../img/%D1%84%D0%BE%D0%BD%20%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0.jpg") no-repeat fixed;
     width: 1920px;
     height: 499px;
+    background-position: center;
+ 
+    
 }
 
 .stat h2 {
@@ -664,6 +808,7 @@ about_me {
     width: 1920px;
     height: 808px;
     color: aliceblue;
+    
 }
 
 
@@ -736,9 +881,14 @@ about_me {
     margin-left: 30px;
     opacity: 0.7;
     padding-left: 10px;
-
-
 }
+
+.naEM input:focus{
+    border: 2px solid cadetblue;
+    box-shadow: 0px 0px 200px rgba(0,0,0,20);
+}
+
+
 
 .naEM textarea {
     margin-top: 5px;
@@ -746,6 +896,11 @@ about_me {
     opacity: 0.7;
     padding-left: 10px;
     padding-top: 10px;
+}
+
+textarea:focus{
+    border: 2px solid cadetblue;
+    box-shadow: 0px 0px 40px rgba(0,0,0,40);
 }
 
 .otprav input {
