@@ -10,36 +10,24 @@
 
 <body>
 
+    <script>
+        window.onload = function() {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function() {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 2000);
+        }
+    </script>
 
-
-
-
-<script>
-  window.onload = function () {
-    document.body.classList.add('loaded_hiding');
-    window.setTimeout(function () {
-      document.body.classList.add('loaded');
-      document.body.classList.remove('loaded_hiding');
-    }, 2000);
-  }
-</script>
-
-
-
-
-<div class="preloader">
-    <div class="preloader__row">
-        <div class="preloader__item"></div>
-        <div class="preloader__item"></div>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
     </div>
-</div>
-   
-   
-   
-   
-   
-   
-   
+
+
     <header>
         <nav>
             <div class="logo">Андрей Браун</div>
@@ -62,8 +50,10 @@
             <div class="title__container">
                 <h1>Привет <br> Я Андрей Браун</h1>
                 <h4>Фулл стек веб-разработчик</h4>
-                <input type="button" value="Обо мне">
-                <input type="button" value="Мои работы">
+                <label for="мне"></label>
+                <label for="работы"></label>
+                <input type="button" value="Обо мне" id="мне">
+                <input type="button" value="Мои работы" id="работы">
             </div>
         </section>
 
@@ -78,8 +68,8 @@
                 <br>
                 <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante <br>
                         facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</small></p>
-
-                <a download href="img/%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5.png" target="_blank">Скачать резюме</a>
+                <label for="резюме"></label>        
+                <a download href="img/%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5.png" target="_blank" id="резюме">Скачать резюме</a>
             </div>
         </section>
 
@@ -145,7 +135,11 @@
                         aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span></p>
             </div>
-            <input type="submit" value="VISIT LIVE SITE">
+            <div class="visit">
+            <label for="visit"></label>
+            <input type="submit" value="VISIT LIVE SITE" id="visit">
+            </div>
+
         </section>
 
         <section class="Payment">
@@ -172,7 +166,6 @@
                         </select>
                     </form>
                 </div>
-
                 <div class="Adap">
                     <p>АДАПТИВНОСТЬ</p>
                     <form action="#">
@@ -266,7 +259,7 @@
                 </div>
                 <div class="naEM">
                     <form action="#">
-                       <label for="name1"></label>
+                        <label for="name1"></label>
                         <input id="name1" type="text" name="text_input" value="" placeholder="Имя">
                         <input id="email1" type="email" name="email_input" value="" placeholder="Email">
                         <br>
@@ -274,7 +267,10 @@
                         <textarea name="sms" id="#" cols="104" rows="7" placeholder="Сообщение"></textarea>
                         <br>
 
-                        <div class="otprav"><input type="submit" value="Отправить"></div>
+                        <div class="otprav">
+                        <label for="отправка"></label>
+                        <input type="submit" value="Отправить" id="отправка">
+                        </div>
 
                     </form>
                 </div>
@@ -287,13 +283,13 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33020.789355255074!2d-71.68929950813533!3d42.985582526701315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e233e8b7590fb7%3A0x386a28dfe2710e41!2z0J3RjNGOINCR0L7RgdGC0L7QvSwg0J3RjNGOLdCl0Y3QvNC_0YjQuNGAIDAzMDcwLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1647678171831!5m2!1sru!2sru" width="1920" height="300" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </section>
-    
-       
+
+
         <div class="foot">
             <footer>Copyright © 2021 Андрей Браун. Design by Web</footer>
         </div>
-     </main>
+    </main>
 
-    </body>
+</body>
 
 </html>
