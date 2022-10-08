@@ -1,0 +1,300 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 61px;
+    background: #344051;
+}
+
+.logo{
+    float: left;
+    color: white;
+    font-size: 23px;
+    line-height: 61px;
+    padding-left: 388px;
+}
+
+.menu{
+    float: left;
+    padding-left: 430px;
+}
+
+.menu li {
+    float: left;
+    line-height: 61px;
+    color: white;
+    margin-right: 40px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.main{
+    width: 100%;
+    height: calc(100% - 61px);
+    background: url(../img/%D0%B8%D1%89%D0%BD.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+}
+
+.title__container{
+    float: left;
+    margin: 423px 0px 0px 401px;
+    color: #2c384a;
+    text-align: center;
+}
+
+.title__container h1{
+    font-size: 84px;
+    font-weight: bold;
+}
+
+.title__container h4{
+    margin-top: 23px;
+    font-size: 20px;
+    color: #79818D;
+}
+
+.title__container input{
+    height: 42px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 19px;
+    padding: 0 16px;
+    margin-top: 47px;
+    margin: 50px 14px 0px 14px;
+}
+
+.about_me {
+    width: 100%;
+    height: 717px;
+    text-align: center;
+}
+
+.about_me_container h2{
+    padding-top: 101px;
+    padding-bottom: 20px;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.about_me_container hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 72px;
+    margin: 0 auto 44px;
+}
+
+.about_me_container img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 38px;
+}
+
+.about_me_container p{
+    font-size: 17px;
+    margin-bottom: 45px;
+    line-height: 20px;
+}
+
+.about_me_container span{
+    margin-right: 230px;
+}
+
+.about_me_container a{
+    display: block;
+    margin: 38px auto 0;
+    width: 157px;
+    height: 34px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    line-height: 33px;
+    font-size: 17px;
+    background: url(../img/%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C.png) 3%/auto no-repeat;
+    padding-left: 18px;
+}
+
+.skills{
+    background: url(../img/%D0%A7%D1%82%D0%BE%20%D1%8F%20%D1%83%D0%BC%D0%B5%D1%8E%20%D0%A4%D0%9E%D0%9D.jpg) center/cover no-repeat;
+    height: 523px;
+}
+
+.skills_container{
+    width: 1110px;
+    margin: 0 auto;
+    padding-top: 110px;
+    padding-bottom: 76px;
+}
+
+.skills_container h2{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.skills_container hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 72px;
+    margin: 0 auto 120px;
+}
+
+.skills_item{
+    float: left;
+    width: 216px;
+    height: 65px;
+    text-align: center;
+    margin: 0 30px;
+}
+
+.skills_item img{
+    margin-bottom: 28px;
+    height: 45px;
+}
+
+.skills_item h3{
+    font-size: 19px;
+    font-weight: 600;
+    color: #cf7600;
+    margin-bottom: 18px;
+    
+}
+
+.skills_item p{
+    font-size: 13px;
+    color: #3F495A;
+}
+
+.clear{
+    clear: both;
+}
+
+.case{
+    padding-bottom: 128px;
+}
+
+.case_container h2{
+    text-align: center;
+    margin-top: 101px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.case_container hr{
+    height: 4px;
+    width: 72px;
+    margin: 20px auto 63px;
+    border: none;
+    background: #d17700;
+}
+
+.case_container .case_p{
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 38px;
+}
+
+.case_container img{
+    width: 100%;
+    margin-left: -210px;
+}
+
+.text_l{
+    width: 200px;
+    float: left;
+    margin-right: 99px;
+    margin-left: 265px;
+    margin-top: -230px;
+}
+
+.text_l h3{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.text_l p{
+    font-size: 17px;
+}
+
+.text_l .text_l_one{
+    margin-top: 6px;
+    margin-bottom: 7px;
+}
+
+.text_l a{
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    background-color: #63B5AE;
+    border: 1px solid #000000;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.text_l .text_l_two{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.text_r h3{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.text_r p{
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.text_r {
+    margin-left: 580px;
+    margin-top: -230px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+text_r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
