@@ -33,70 +33,37 @@ nav{
 .main{
     width: 100%;
     height: calc(100% - 61px);
-    /*background: url(../img/%D0%B8%D1%89%D0%BD.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;*/
-    background: url(../img/DSC02386.JPG);
-    background-size: cover
+    background: url(../img/%D0%B8%D1%89%D0%BD.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
 }
 
-/*.title__container{
+.title__container{
     float: left;
     margin: 423px 0px 0px 401px;
     color: #2c384a;
     text-align: center;
-}*/
-
-.title__container{
-    float: left;
-    margin: 423px 0px 0px 101px;
-    color: #FFFFFF;
-    text-align: center;
 
 }
-
-/*.title__container h1{
-    font-size: 84px;
-    font-weight: bold;
-}*/
 
 .title__container h1{
-    font-size: 70px;
+    font-size: 84px;
     font-weight: bold;
 }
 
-/*.title__container h4{
-    margin-top: 23px;
-    font-size: 20px;
-    color: #79818D;
-}*/
 
 .title__container h4{
     margin-top: 23px;
     font-size: 20px;
-    color: #FFFFFF;
+    color: #79818D;
 }
 
-/*.title__container input{
-    height: 42px;
+.title__container input{
     text-align: center;
     border: 2px solid #6d7682;
     background: none;
     border-radius: 5px;
     color: #6d7682;
     font-size: 19px;
-    padding: 0 16px;
-    margin-top: 47px;
-    margin: 50px 14px 0px 14px;
-}*/
-
-.title__container input{
-    height: 42px;
-    text-align: center;
-    border: 2px solid #FFFFFF;
-    background: none;
-    border-radius: 5px;
-    color: #FFFFFF;
-    font-size: 19px;
-    padding: 0 16px;
+    padding: 11px 16px;
     margin-top: 47px;
     margin: 50px 14px 0px 14px;
 }
@@ -142,15 +109,15 @@ nav{
 .about_me_container a{
     display: block;
     margin: 38px auto 0;
-    width: 157px;
-    height: 34px;
+    width: 160px;
+    height: 38px;
     text-align: center;
     border: 1px solid black;
     border-radius: 8px;
-    line-height: 33px;
+    line-height: 38px;
     font-size: 17px;
     background: url(../img/%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C.png) 3%/auto no-repeat;
-    padding-left: 18px;
+    padding-left: 20px;
 }
 
 .skills{
@@ -397,7 +364,6 @@ nav{
 
 .statistic_container{
     width: 1094px;
-    height: 499px;
     margin: 0 auto;
 }
 
@@ -422,7 +388,8 @@ nav{
 .statistic_item{
     display: inline-block;
     width: 213px;
-    margin-right: 55px;
+    margin-right: 10px;
+    margin-left: 45px;
     text-align: center;
 }
 
