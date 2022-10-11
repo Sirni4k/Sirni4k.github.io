@@ -1,0 +1,54 @@
+.menu li a{
+    color: white;
+    display: inline-block;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+
+.menu li a:hover{
+    color: cadetblue;
+}
+
+.menu li a:active{
+    transform: scale(1.1);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
