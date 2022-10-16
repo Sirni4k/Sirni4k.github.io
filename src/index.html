@@ -10,9 +10,13 @@
     <title>Визитка</title>
     
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 </head>
 
@@ -25,7 +29,7 @@
     </script>
 
     <div class="preloader">
-        <div class="container">
+        <div class="container_preloader">
             <div class="block"></div>
             <div class="block"></div>
             <div class="block"></div>
@@ -47,28 +51,58 @@
 
     <header>
         <nav>
-            <div class="logo">Андрей Браун</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Обо мне</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Кейсы</a></li>
-                    <li><a href="#">Прайс</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-lg-3 col-7">
+                        <div class="logo">Андрей Браун</div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#">Обо мне</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Кейсы</a></li>
+                                <li><a href="#">Прайс</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn-outline-info dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Навигация
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
         <section class="main">
-            <div class="title__container">
-                <h1>Привет <br> Я Андрей Браун</h1>
-                <h4>Фулл стек веб-разработчик</h4>
-                <input type="submit" value="Обо мне">
-                <input type="submit" value="Мои работы">
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-6">
+                        <div class="title__container">
+                            <h1>Привет <br> Я Андрей Браун</h1>
+                            <h4>Фулл стек веб-разработчик</h4>
+                            <input type="submit" value="Обо мне">
+                            <input type="submit" value="Мои работы">
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </section>
 
         <section class="about_me">
@@ -81,7 +115,7 @@
                 <a href="#">Скачать резюме</a>
             </div>
         </section>
-        <section class="skills">
+        <!--<section class="skills">
             <div class=skills_container>
                 <h2>Что я умею</h2>
                 <hr>
@@ -253,9 +287,9 @@
                     <div class="clear"></div>
                 </div>
             </div>
-        </section>
+        </section>-->
     </main>
-    <footer>
+    <!--<footer>
         <div class="map">
             <img src="img/%D0%BA%D0%B0%D1%80%D1%82%D0%B0%20%D0%BF%D0%BE%D0%B4%D0%B2%D0%B0%D0%BB.png" alt="карта">
         </div>
@@ -265,7 +299,8 @@
                 <p>Copyright 2021 Андрей Браун. Design by Web</p>
             </div>
         </div>
-    </footer>
+    </footer>-->
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

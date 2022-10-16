@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('../fonts/FranklinGothic-Medium.woff2') format('woff2'),
+        url('../fonts/FranklinGothic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -11,7 +20,7 @@ body {
     z-index: 1001;
 }
 
-.container {
+.container_preloader {
     width: 80px;
     height: 100px;
 }
@@ -75,14 +84,15 @@ nav {
     height: 61px;
     background: #344051;
     position: fixed;
+    font-family: Franklin Gothic, sans-serif;
+    z-index: 10;
 }
 
 .logo {
     float: left;
     color: white;
-    font-size: 23px;
+    font-size: 28px;
     line-height: 61px;
-    padding-left: 388px;
 }
 
 main {
@@ -91,7 +101,6 @@ main {
 
 .menu {
     float: left;
-    padding-left: 430px;
 }
 
 .menu li {
@@ -99,11 +108,16 @@ main {
     line-height: 61px;
     color: white;
     margin-right: 40px;
-    font-size: 17px;
+    font-size: 15px;
     text-transform: uppercase;
+    
 }
 
 .menu li a:visited {
+    color: white;
+}
+
+.white-btn:visited{
     color: white;
 }
 
@@ -111,13 +125,15 @@ main {
     width: 100%;
     height: 100vh;
     background: url(../img/%D0%B8%D1%89%D0%BD.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+    font-family: Franklin Gothic, sans-serif;
 }
 
 .title__container {
     float: left;
-    margin: 423px 0px 0px 401px;
     color: #2c384a;
     text-align: center;
+    width: 100%;
+    margin-top: 130px;
 
 }
 
@@ -157,6 +173,7 @@ main {
     font-size: 34px;
     font-weight: 600;
     text-transform: uppercase;
+    font-family: Franklin Gothic, sans-serif;
 }
 
 .about_me_container hr {
@@ -177,10 +194,11 @@ main {
     font-size: 17px;
     margin-bottom: 45px;
     line-height: 20px;
+    font-family: Calibri, sans-serif;
 }
 
 .about_me_container span {
-    margin-right: 230px;
+    margin-right: 208px;
 }
 
 .about_me_container a {
@@ -191,10 +209,13 @@ main {
     text-align: center;
     border: 1px solid black;
     border-radius: 8px;
-    line-height: 38px;
+    line-height: 36px;
     font-size: 17px;
     background: url(../img/%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C.png) 3%/auto no-repeat;
     padding-left: 20px;
+    font-family: Franklin Gothic, sans-serif;
+    font-weight: 100;
+    color: #6F707E;
 }
 
 .skills {
@@ -207,6 +228,7 @@ main {
     margin: 0 auto;
     padding-top: 110px;
     padding-bottom: 76px;
+    font-family: Franklin Gothic, sans-serif;
 }
 
 .skills_container h2 {
@@ -243,13 +265,14 @@ main {
     font-weight: 600;
     color: #cf7600;
     margin-bottom: 18px;
-
+    font-family: Bahnschrift, sans-serif;
 }
 
 .skills_item p {
-    font-size: 13px;
+    font-size: 14px;
     color: #3F495A;
     line-height: 18px;
+    font-family: Calibri, sans-serif;
 }
 
 .clear {
