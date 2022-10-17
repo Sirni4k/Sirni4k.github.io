@@ -1,0 +1,38 @@
+@media (max-width: 991px){
+    .title__container, .title__container h4, .title__container input{
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .title__container h1{
+        font-size: 70px;
+    }
+    
+    .title__container input{
+        border: 3px solid #ffff;
+    }
+    
+    .main{
+        position: relative;
+    }
+    .main::after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4)
+    }
+
+    .title__container{
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    }
+    
+}

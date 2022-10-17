@@ -1,0 +1,671 @@
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('../fonts/FranklinGothic-Medium.woff2') format('woff2'),
+        url('../fonts/FranklinGothic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.preloader {
+    background-color: black;
+    width: 100%;
+    height: 1080px;
+    padding-top: 450px;
+    padding-left: 960px;
+    z-index: 1001;
+}
+
+.container_preloader {
+    width: 80px;
+    height: 100px;
+}
+
+.block {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 10px 5px 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background: #FFFFFF;
+}
+
+.block:nth-child(4n+1) {
+    animation: wave 2s ease .0s infinite;
+}
+
+.block:nth-child(4n+2) {
+    animation: wave 2s ease .2s infinite;
+}
+
+.block:nth-child(4n+3) {
+    animation: wave 2s ease .4s infinite;
+}
+
+.block:nth-child(4n+4) {
+    animation: wave 2s ease .6s infinite;
+    margin-right: 0;
+}
+
+@keyframes wave {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+
+    50% {
+        top: 30px;
+        opacity: .2;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: ;
+}
+
+.loaded .preloader {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    height: 61px;
+    background: #344051;
+    position: fixed;
+    font-family: Franklin Gothic, sans-serif;
+    z-index: 10;
+}
+
+.logo {
+    float: left;
+    color: white;
+    font-size: 28px;
+    line-height: 61px;
+}
+
+main {
+    width: 100%;
+}
+
+.menu {
+    float: left;
+}
+
+.menu li {
+    float: left;
+    line-height: 61px;
+    color: white;
+    margin-right: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    
+}
+
+.menu li a:visited {
+    color: white;
+}
+
+.white-btn:visited{
+    color: white;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/%D0%B8%D1%89%D0%BD.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+    font-family: Franklin Gothic, sans-serif;
+}
+
+.title__container {
+    float: left;
+    color: #2c384a;
+    text-align: center;
+    width: 100%;
+    margin-top: 130px;
+
+}
+
+.title__container h1 {
+    font-size: 84px;
+    font-weight: bold;
+}
+
+
+.title__container h4 {
+    margin-top: 23px;
+    font-size: 20px;
+    color: #79818D;
+}
+
+.title__container input {
+    text-align: center;
+    border: 3px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 19px;
+    padding: 11px 16px;
+    margin-top: 47px;
+    margin: 50px 14px 0px 14px;
+    
+    
+}
+
+.about_me {
+    width: 100%;
+    margin-bottom: 95px;
+}
+
+.about_me_container h2 {
+    padding-top: 101px;
+    padding-bottom: 20px;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Franklin Gothic, sans-serif;
+}
+
+.about_me_container hr {
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 72px;
+    margin: 0 auto 44px;
+    opacity: 1;
+}
+
+.about_me_container img {
+    margin-bottom: 38px;
+}
+
+.about_me_container p {
+    font-size: 17px;
+    margin-bottom: 45px;
+    line-height: 20px;
+    font-family: Calibri, sans-serif;
+}
+
+.about_me_container a {
+    display: block;
+    width: 160px;
+    height: 38px;
+    border: 1px solid black;
+    border-radius: 8px;
+    line-height: 36px;
+    font-size: 17px;
+    background: url(../img/%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C.png) 3%/auto no-repeat;
+    padding-left: 20px;
+    font-family: Franklin Gothic, sans-serif;
+    font-weight: 100;
+    color: #6F707E;
+    text-decoration: none;
+}
+
+.skills {
+    background: url(../img/%D0%A7%D1%82%D0%BE%20%D1%8F%20%D1%83%D0%BC%D0%B5%D1%8E%20%D0%A4%D0%9E%D0%9D.jpg) center/cover no-repeat;
+    max-width: 100%;
+    padding-bottom: 75px;
+}
+
+.skills_container {
+    width: 1110px;
+    padding-top: 110px;
+    font-family: Franklin Gothic, sans-serif;
+    max-width: 100%
+}
+
+.skills_container h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.skills_container hr {
+    height: 4px;
+    border: none;
+    background: #EA7800;
+    width: 72px;
+    margin: 0 auto 120px;
+    opacity: 1;
+}
+
+.skills_item img {
+    margin-bottom: 28px;
+    height: 40px;
+}
+
+.skills_item h3 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #cf7600;
+    margin-bottom: 18px;
+    font-family: Bahnschrift, sans-serif;
+}
+
+.skills_item p {
+    font-size: 14px;
+    color: #3F495A;
+    line-height: 18px;
+    font-family: Calibri, sans-serif;
+}
+
+.case_container {
+    width: 1170px;
+    max-width: 100%;
+}
+
+.case_container img {
+    max-width: 100%;
+    height: 592px;
+    margin-bottom: 40px;
+}
+
+.case_container h2 {
+    text-align: center;
+    padding-top: 101px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.case_container hr {
+    height: 4px;
+    width: 72px;
+    margin: 20px auto 63px;
+    border: none;
+    background: #EA7800;
+    opacity: 1;
+}
+
+.case_container .case_p {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 38px;
+}
+
+/*
+
+
+.text_l h3 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.text_l p {
+    font-size: 17px;
+}
+
+.text_l .text_l_one {
+    margin-top: 6px;
+    margin-bottom: 7px;
+}
+
+.text_l a {
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    background-color: #63B5AE;
+    border: 1px solid #000000;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.text_l .text_l_two {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.texr r {
+    float: left;
+    width: 860px;
+}
+
+.text_r h3 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.text_r p {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.calculator {
+    padding-top: 145px;
+    padding-bottom: 100px;
+}
+
+.calculator_container {
+    width: 1080px;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.2);
+    margin: 0 auto;
+    padding-top: 74px;
+}
+
+.calculator_container h2 {
+    text-align: center;
+    width: 400px;
+    font-size: 43px;
+    font-weight: 600;
+    margin: 0px auto 65px;
+}
+
+.calcul_item {
+    width: 891px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.calcul_item h3 {
+    font-size: 29px;
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+
+.calcul_item select {
+    margin-bottom: 37px;
+}
+
+.mySelect {
+    display: block;
+    background: #eeeeee;
+    width: 891px;
+    height: 57px;
+    font-size: 17px;
+    padding-left: 17px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/select.png) 98% 50%/auto no-repeat, #eee;
+}
+
+.calcul_item hr {
+    height: 2px;
+    border: none;
+    background: #eee;
+    width: 100%;
+    margin: 0 auto 36px;
+}
+
+.calculator_footer {
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.days .text {
+    float: left;
+}
+
+.days .number {
+    text-align: end;
+    font-size: 30px;
+}
+
+.price .text {
+    float: left;
+}
+
+.price .number {
+    text-align: end;
+    font-size: 30px;
+}
+
+.days {
+    padding-bottom: 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+.statistic {
+    background: url(../img/bg3.jpg) center/cover fixed no-repeat;
+    height: 499px;
+}
+
+.statistic_container {
+    width: 1094px;
+    margin: 0 auto;
+}
+
+.statistic_container h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    width: 410px;
+    margin: 0px auto;
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+
+.statistic_container hr {
+    height: 4px;
+    border: none;
+    background: #EA7800;
+    width: 72px;
+    margin: 20px auto 75px;
+}
+
+.statistic_item {
+    display: inline-block;
+    width: 213px;
+    margin-right: 10px;
+    margin-left: 45px;
+    text-align: center;
+}
+
+.statistic_item img {
+    height: 52px;
+    margin-bottom: 32px;
+}
+
+.statistic_item h3 {
+    font-size: 37px;
+    margin-bottom: 32px;
+    font-weight: 800;
+}
+
+.statistic_item p {
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.reviews {
+    height: 589px;
+}
+
+.reviews_container {
+    width: 900px;
+    height: 589px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reviews_container h2 {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.reviews_container hr {
+    height: 4px;
+    width: 72px;
+    margin: 0 auto 55px;
+    border: none;
+    background: #EA7800;
+}
+
+.reviews_container img {
+    margin-bottom: 48px;
+}
+
+.review_text {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 27px;
+}
+
+.review_author {
+    font-size: 17px;
+}
+
+.review_author span {
+    font-weight: 600;
+}
+
+.contacts {
+    background: url(../img/bg4.jpg) no-repeat center center / cover;
+    height: 808px;
+    color: #FFFFFF;
+}
+
+.contacts_container {
+    width: 760px;
+    height: 808px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 101px;
+}
+
+.contacts_container h2 {
+    font-size: 34px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.contacts_container hr {
+    height: 4px;
+    width: 72px;
+    margin: 0 auto 43px;
+    border: none;
+    background: #EA7800;
+}
+
+.contacts_subscription {
+    font-size: 17px;
+}
+
+.contacts_info_item {
+    display: block;
+    float: left;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 38px;
+    margin-left: 35px;
+    margin-right: 22px;
+    width: 192px;
+    height: 70px;
+}
+
+.contacts_info_item img {
+    height: 26px;
+    margin-bottom: 10px;
+
+}
+
+.contacts_info_item p {
+    font-size: 17px;
+}
+
+.contacts_container h3 {
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.contacts_info .clear {
+    clear: both;
+}
+
+.contacts_inputs input {
+    display: block;
+    width: 352px;
+    float: left;
+    height: 34px;
+    padding-left: 14px;
+    margin-bottom: 14px;
+    background: rgba(238, 238, 238, 0.85);
+    font-size: 17px;
+}
+
+.contacts_inputs .secondInput {
+    float: right;
+}
+
+.contacts_textarea {
+    display: block;
+    width: 100%;
+    height: 94px;
+    resize: none;
+    background: rgba(238, 238, 238, 0.85);
+    padding-left: 14px;
+    padding-top: 8px;
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+
+.contacts_input_puc {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 21px;
+    background: none;
+    border: 2px solid #F9FAFF;
+    border-radius: 8px;
+    color: #FFFFFF;
+    margin-bottom: 75px;
+}
+
+.contacts_social_a {
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-left: 55px;
+}
+
+.contacts_social {
+    margin-left: 97px;
+}
+
+.clear {
+    clear: both;
+}
+
+.map img {
+    display: block;
+    width: 100%;
+}
+
+.footer {
+    background: #354051;
+    height: 90px;
+}
+
+.footer_container {
+    text-align: center;
+    line-height: 90px;
+    color: white;
+    font-size: 13px;
+}*/
