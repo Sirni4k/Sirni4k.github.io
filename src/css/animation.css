@@ -161,3 +161,20 @@
     transform: rotate(360deg);
     transition: 0.8s;
 }
+
+.mySelect:hover{
+    border: 2px solid #00b6af;
+}
+
+.calculator_footer button{
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+.calculator_footer button:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+
+
